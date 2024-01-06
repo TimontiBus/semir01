@@ -1,17 +1,20 @@
 ﻿// Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
 
-int num = 5365324;
-
-if (num > 9)
+int num = 12345678;
+if (num > 0)
 {
-	while (num % 10 == num)
+	while (num > 100)
 	{
-		int oct = num % 10;
-		Console.Write($"{oct}");
-		num /= 10;
+		num /= 10;   // вот это равно означает, что результат положим обратно в num --> (num = num / 10;)
 	}
+	Console.Write($"{num / 10}");
 }
 else
 {
-	Console.Write(num);
+	Console.Write("Нет 3 цифры");
 }
+
+
+
+
+
